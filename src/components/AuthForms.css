@@ -1,0 +1,40 @@
+.form-box {
+    position: relative;
+    overflow: hidden;
+    max-width: 1000px;
+    margin: 0 auto;
+    margin-top: 100px;
+    height: 600px;
+}
+  
+  .Login-container,
+  .register-container {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    transition: transform 2s ease;
+    opacity: 0;
+    visibility: hidden;
+    left: 0;
+  }
+  
+  .Login-container.slide-in-left {
+    transform: translateX(0);
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  .register-container.slide-in-right {
+    transform: translateX(0);
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  .Login-container {
+    transform: translateX(-100%);
+  }
+  
+  .register-container {
+    transform: translateX(100%);
+  }
+  
